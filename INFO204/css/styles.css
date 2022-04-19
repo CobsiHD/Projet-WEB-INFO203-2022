@@ -87,12 +87,12 @@ h1 {
 }
 
 #cube div {
-    background: hsla(0, 85%, 50%, 0.9);
+    background: hsla(283, 39%, 53%, 0.9);
     display: block;
     position: absolute;
     width: 200px;
     height: 100px;
-    border: 1px solid hsla(0, 85%, 50%, 0.9);
+    border: 1px solid hsla(283, 39%, 53%, 0.9);
     border-radius: 40px;
 
     margin: 0 auto;
