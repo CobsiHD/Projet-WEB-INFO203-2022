@@ -28,6 +28,7 @@
             <span class="dot dot1"></span>
             <span class="dot dot2"></span>
         </div>
+
         <div class="right" id="3">
             <span class="dot dot1"></span>
             <span class="dot dot2"></span>
@@ -39,13 +40,14 @@
             <span class="dot dot3"></span>
             <span class="dot dot4"></span>
         </div>
-        <div class="top">
-            <span class="dot dot1" id="5"></span>
+        <div class="top" id="5">
+            <span class="dot dot1" ></span>
             <span class="dot dot2"></span>
             <span class="dot dot3"></span>
             <span class="dot dot4"></span>
             <span class="dot dot5"></span>
         </div>
+
         <div class="bottom" id="6">
             <span class="dot dot1"></span>
             <span class="dot dot2"></span>
@@ -55,6 +57,7 @@
             <span class="dot dot6"></span>
         </div>
     </div>
+
     <script>
         var cube = document.getElementById('cube');
 
@@ -64,6 +67,8 @@
         cube.onclick = function() {
             var xRand = getRandom(max, min);
             var yRand = getRandom(max, min);
+
+
 
             console.log(max, min);
             console.log(xRand, yRand)
@@ -75,6 +80,9 @@
             return (Math.floor(Math.random() * (max-min)) + min) * 90;
 
         }
+
+
+
 
     </script>
 
