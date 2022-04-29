@@ -31,7 +31,7 @@ if(isset($_POST["login"]) && isset($_POST["passwd"])){
     Password :  <input type="text" name="passwd">
         <input type="submit" value="Connection">
     </form>
-    <a href="create_auth.php">Créer Un Compte</a>
+    <a href="create_account.php">Créer Un Compte</a>
 </body>
 <?php
 include("../../db/db_disconnect.php");
