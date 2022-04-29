@@ -23,15 +23,34 @@ if(isset($_POST["login"]) && isset($_POST["passwd"])){
 <head>
 	<meta charset="UTF-8">
     <title> Login </title>
-	<link rel="stylesheet" href="../../css/styles_auth.css">
+	<link rel="stylesheet" href="../../../css/styles_auth.css">
 </head>
 <body>
-    <form method="POST" action="login_form.php">
-    Login    :	<input type="text" name="login">
-    Password :  <input type="text" name="passwd">
-        <input type="submit" value="Connection">
-    </form>
-    <a href="create_account.php">Créer Un Compte</a>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+            <div class="container">
+                <div class="form">
+                <h2>Connectez-vous !</h2>
+                <form method="POST" action="login_form.php">
+                    <div class="inputBox">
+                        <input type="text" name="login" placeholder="Identifiant">
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" name="passwd" placeholder="Mot de passe">
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Connection">
+                    </div>
+                    <p class="sign">Vous n'avez pas de Compte ? <a href="create_account.php">Inscrivez-vous</a></p>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 </body>
 <?php
 include("../../../db/db_disconnect.php");
