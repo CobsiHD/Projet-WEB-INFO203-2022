@@ -1,0 +1,26 @@
+*{
+    font-family: "Source Code Pro", monospace;
+    margin: 0;
+    padding: 0;
+}
+section {
+    text-align: center;
+}
+#dealer-cards img {
+    height : 50%;
+    width : 40%;
+    margin : 1px;
+}
+#player-cards img {
+    height : 50%;
+    width : 45%;
+    margin : 1px;
+}
+#hit {
+    width:40%;
+    height: 50;
+}
+#stay {
+    width:40%;
+    height: 50;
+}
