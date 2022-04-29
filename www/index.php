@@ -7,12 +7,24 @@
   <link rel="stylesheet" href="./css/styles_accueil.css">
 </head>
 <body>
+
     <header>
-        <img href="./images/logo.png">
-        <img href="./images/menu.png">
+        <div class="menu">
+            <img src="images/img_menu.png" alt="menu">
+        </div>
+        <div class="titre">
+            <h1>Casino</h1>
+        </div>
+        <div class="profil">
+            <img src="images/img_profil.jpeg" alt="profil">
+        </div>
     </header>
-    <p> Hello world</p>
+
+
+
     <footer>
+
+
         <p>Conctacté nous avec nos réseaux
             <a href=""><img href="./images/logo_twiter.png"></a>
             <a href=""><img href="./images/logo_insta.png"></a>
