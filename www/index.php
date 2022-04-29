@@ -9,12 +9,19 @@
 <body>
 
     <header>
-        <img href="./images/logo.png">
-        <img href="./images/menu.png">
+        <div class="menu">
+            <img src="images/img_menu.png" alt="menu">
+        </div>
+        <div class="titre">
+            <h1>Casino</h1>
+        </div>
+        <div class="profil">
+            <img src="images/img_profil.jpeg" alt="profil">
+        </div>
     </header>
 
 
-    <p> Hello world</p>
+
     <footer>
 
 
