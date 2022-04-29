@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Top 5</title>
-  <link rel="stylesheet" href="./css/style_accueil.css">
+  <title>Accueil</title>
+  <link rel="stylesheet" href="./css/styles_accueil.css">
 </head>
 <body>
     <header>
