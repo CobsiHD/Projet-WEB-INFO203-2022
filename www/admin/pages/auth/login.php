@@ -1,5 +1,5 @@
 <?php
-include("../../db/db_connect.php");
+include("../../../db/db_connect.php");
 session_start() ;
 if(isset($_POST["login"]) && isset($_POST["passwd"])){
     $log=$_POST["login"];
@@ -12,7 +12,7 @@ if(isset($_POST["login"]) && isset($_POST["passwd"])){
 		$_SESSION["start"]=time() ; 
 	
 		/* redirection */
-		header("Location:../../index.php") ;
+		header("Location:../../../index.php") ;
     }
 	else {
 		header("Location:login.php") ; 
@@ -34,6 +34,6 @@ if(isset($_POST["login"]) && isset($_POST["passwd"])){
     <a href="create_account.php">Créer Un Compte</a>
 </body>
 <?php
-include("../../db/db_disconnect.php");
+include("../../../db/db_disconnect.php");
 ?>
 </html>

@@ -1,5 +1,5 @@
 <?php
-include("../../db/db_connect.php");
+include("../../../db/db_connect.php");
 ?>
 <html>
     <head>
@@ -30,5 +30,5 @@ include("../../db/db_connect.php");
     </body>
 </html>
 <?php 
-include("../../db/db_connect.php");
+include("../../../db/db_connect.php");
 ?>
