@@ -20,24 +20,25 @@ section .color{
     filter: blur(150px);
 }
 section .color:nth-child(1){
-    top : 10%;
+    top : 2%;
+    right : 2%;
     width: 80%;
     height: 80%;
-    background:rgb(249, 41, 253);
+    background:#0e5442;
 }
 section .color:nth-child(2){
-    bottom : 15%;
-    left : 5%;
+    bottom : 5%;
+    left : 2%;
     width: 70%;
     height: 70%;
-    background: rgb(138, 168, 251);
+    background: #22bba4;
 }
 section .color:nth-child(3){
-    bottom : 5%;
+    bottom : 7.5%;
     right: 5%;
-    width: 40%;
+    width: 60%;
     height: 40%;
-    background: rgb(55, 255, 195);
+    background: #0b8370;
 }
 .box{
     position: relative; 

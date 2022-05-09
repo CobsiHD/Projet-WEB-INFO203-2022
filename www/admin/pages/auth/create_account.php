@@ -31,21 +31,28 @@ include("../../../db/db_connect.php");
                     </div>
                     <p class="sign"><a href="login.php">Connectez-Vous</a></p>               
                     </form>
+                    <p class="sign">
+                    <?php
+                    include("../../lib/crud/authentification.crud.php");
+                    if (isset($_POST["login"]) && isset($_POST["passwd"]) && isset($_POST["conf_passwd"])){
+                        $log = $_POST["login"];
+                        $pwd = $_POST["passwd"];
+                        $conf_pwd = $_POST["conf_passwd"];
+                        $verif=select_auth($conn,$log);
+                        if (isset($verif)){
+                            echo("Le Compte est déjà existant !");
+                        }elseif ($pwd == $conf_pwd && !(isset($verif))) {
+                            $pwd=md5($pwd);
+                            create_auth($conn,$log,$pwd);
+                            echo("Le Compte a été créer !");
+                        };
+                    };
+                    ?>
+                    </p>
                 </div>
             </div>
         </div>           
-        <?php
-        include("../../lib/crud/authentification.crud.php");
-        if (isset($_POST["login"]) && isset($_POST["passwd"]) && isset($_POST["conf_passwd"])){
-            $log = $_POST["login"];
-            $pwd = $_POST["passwd"];
-            $conf_pwd = $_POST["conf_passwd"];
-            if ($pwd == $conf_pwd) {
-                $pwd=md5($pwd);
-                create_auth($conn,$log,$pwd);
-            };
-        };
-        ?>
+
     </body>
 </html>
 <?php 

@@ -9,8 +9,8 @@ if(isset($_POST["login"]) && isset($_POST["passwd"])){
 	};
     if(md5($_POST["passwd"])==$pwd){
 		/* session admin */
-		$_SESSION["start"]=time() ; 
-	
+		$_SESSION["log"]=TRUE ; 
+        $_SESSION["user"]=$log;
 		/* redirection */
 		header("Location:../../../index.php") ;
     }
