@@ -14,9 +14,4 @@ else {
     update($conn, $user,$info_joueur['general'],$info_joueur['des'],$info_joueur['bonneteau'],$info_joueur['roulette'],$info_joueur['blackjack'],$info_joueur['machine_a_sous'],$info_joueur['chevaux'])
 };
 };
-
-
-
-
-
 ?>

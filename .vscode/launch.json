@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "http://os-vps418.infomaniak.ch:1180/l1_info_5/www/",
+            "request": "launch",
+            "url": "http://os-vps418.infomaniak.ch:1180/l1_info_5/www/"
+        }
+    ]
+}
