@@ -18,9 +18,9 @@ function constrution_deck(){
     let valeur = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"];
     let types = ["C","D","H","S"]; // Initial des Types de cartes en anglais pour éviter toute confusions entre le coeur et le carreau//
     deck = [];
-    for (let i =0; i < types.length ; i++) {
+    for (let i =0; i < types.length ; i++){
         for (let j=0 ; j < valeur.length ; j++ ){
-            deck.push(valeur[j]) + "-" + types[i]);// On crée 2 boucle qui parcourt les 2 tableaux pour créer à chaque fois la carte de différent type et valeur.//
+            deck.push(valeur[j] + "-" + types[i] );// On crée 2 boucle qui parcourt les 2 tableaux pour créer à chaque fois la carte de différent type et valeur.//
         };
     };
     console.log(deck);
