@@ -5,19 +5,19 @@ function create_auth($conn,$log,$pwd){
 	return $ret ;
 }
 function select_auth($conn,$log){
-	$sql="SELECT * FROM `authentification` WHERE login='$log'";
+	$sql="SELECT * FROM `authentification` WHERE `login`='$log'";
 	if($ret=mysqli_query($conn, $sql)){
 		$ret=mysqli_fetch_assoc($ret);
 	}
 	return $ret ;
 };
 function update_auth($conn, $log, $pwd){
-	$sql="UPDATE `joueur` set `nom`='$nom', `prenom`='$prenom', `pays`='$pays', `rang`=$rang WHERE `id`=$id" ;
+	$sql="UPDATE `authentification` set `pwd`='$pwd' WHERE `login`='$log'" ;
 	$ret=mysqli_query($conn, $sql) ;
         return $ret ; 
 }
 function delete_auth($conn, $log){
-	$sql="DELETE FROM `joueur` WHERE `id`=$id" ;
+	$sql="DELETE FROM `	authentification` WHERE `login`='$log'" ;
 	$ret=mysqli_query($conn, $sql) ;
 	return $ret ; 
 }
