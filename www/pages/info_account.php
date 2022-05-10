@@ -17,6 +17,19 @@ include("../db/db_connect.php");
                 $info=select_class($_SESSION["user"]);
                 echo("Votre nom d'utilisateurs est".$info["user"]);
                 echo("<br> Votre argent restant est :".$info["general"]);
-                echo("<br>")
-
+                echo("<br> Argent gagné ou perdu aux jeux :");
+                echo("<br> BlackJack :".$info["blackjack"]);
+                echo("<br> Bonnetaeau :".$info["bonneteau"]);
+                echo("<br> Courses à Cheval :".info["chevaux"]);
+                echo("<br> Dés :".info["des"]);
+                echo("<br> Machine à sous :".info["machine_a_sous"]);
+                echo("<br> Roulette :".info["Roulette"]);
                 ?>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
+<?php
+include("../db/db_disconnect.php");
+?>
