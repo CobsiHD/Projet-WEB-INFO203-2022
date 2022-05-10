@@ -27,9 +27,6 @@ if(isset($_POST["login"]) && isset($_POST["passwd"])){
 </head>
 <body>
     <section>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
         <div class="box">
             <div class="container">
                 <div class="form">

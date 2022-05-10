@@ -9,9 +9,6 @@ include("../../../db/db_connect.php");
     </head>
     <body>
     <section>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
         <div class="box">
             <div class="container">
                 <div class="form">    
@@ -34,6 +31,7 @@ include("../../../db/db_connect.php");
                     <p class="sign">
                     <?php
                     include("../../lib/crud/authentification.crud.php");
+                    include("../../lib/crud/classements.crud.php");
                     if (isset($_POST["login"]) && isset($_POST["passwd"]) && isset($_POST["conf_passwd"])){
                         $log = $_POST["login"];
                         $pwd = $_POST["passwd"];
@@ -44,6 +42,7 @@ include("../../../db/db_connect.php");
                         }elseif ($pwd == $conf_pwd && !(isset($verif))) {
                             $pwd=md5($pwd);
                             create_auth($conn,$log,$pwd);
+                            create_class($conn,$log,100,0,0,0,0,0,0);
                             echo("Le Compte a été créer !");
                         };
                     };

@@ -12,34 +12,11 @@ section {
     justify-content:center ;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom,#f1f4f9,#dff1ff);
+    background-color: #b6fac3;
+    background-image: linear-gradient(135deg,  #0b8370 0%, #b6fac3 100%);
 
 }
-section .color{
-    position:absolute;
-    filter: blur(150px);
-}
-section .color:nth-child(1){
-    top : 2%;
-    right : 2%;
-    width: 80%;
-    height: 80%;
-    background:#0e5442;
-}
-section .color:nth-child(2){
-    bottom : 5%;
-    left : 2%;
-    width: 70%;
-    height: 70%;
-    background: #22bba4;
-}
-section .color:nth-child(3){
-    bottom : 7.5%;
-    right: 5%;
-    width: 60%;
-    height: 40%;
-    background: #0b8370;
-}
+
 .box{
     position: relative; 
 }
