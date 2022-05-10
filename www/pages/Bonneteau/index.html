@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bonneteau</title>
+    <link rel="stylesheet" type="text/css" href="css/styleBonneteau.css">
+</head>
+
+<body>
+<div class="container">
+    <h1 class="titre">Bonneteau</h1>
+    <h3 class="slogan">La carte rouge gagne et les cartes noires perdent</h3>
+
+    <div class="cards">
+        <div class="card" onclick="flip(event)">
+
+            <div class="front">
+                <img class="card-img" src="images/ACoeur.jpg" width="200">
+            </div>
+            <div class="back"></div>
+        </div>
+        <div class="card" onclick="flip(event)">
+            <!-- image de la carte rouge -->
+            <div class="front">
+                <img class="card-img" src="images/DPique.png" width="200">
+            </div>
+            <div class="back"></div>
+        </div>
+        <div class="card" onclick="flip(event)">
+            <!-- image de la carte rouge -->
+            <div class="front">
+                <img class="card-img" src="images/Dos.JPEG" width="200">
+            </div>
+            <div class="back"></div>
+        </div>
+    </div>
+
+    <!-- un bouton generer -->
+    <button id="btn">Générer</button>
+</div>
+
+<!-- script javascript -->
+<script src="js/script.js"></script>
+</body>
+</html>
