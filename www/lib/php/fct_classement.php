@@ -2,7 +2,7 @@
 
 include("../../db/db_connect.php");
 
-/*classement("general",$conn);*/
+classement("general",$conn);
 function classement($type,$conn){
     $sql="SELECT * FROM `classements`";
     $ret=mysqli_query($conn, $sql);
@@ -12,13 +12,9 @@ function classement($type,$conn){
     $temp=$origine;
     $class=[];
     while (count($class)!=count($origine) || count($class)<=2){
-        if (count($temp)!=0){
-            $limit = count($temp) -1;
-        }
-        elseif (count($temp)==0){
-            $limit = 0 ;
-        }
-        for($i = 0 ; $limit; $i++){
+        $limit = count($temp) -1;
+        echo($limit);
+        for($i = 0 ; $i < $limit; $i++){
             if($temp[$i][$type] <= $temp[$i + 1][$type] ){
                 echo("coucou");
                 $indice=$i;
