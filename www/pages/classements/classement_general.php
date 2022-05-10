@@ -22,9 +22,10 @@
             <li>Roulette</li>
         </ul>
         <nav>
+            <table>
             <?php
                 include("fct_classement.php");
-                
+                classement("general");
             ?>
         </nav>
     </nav>
