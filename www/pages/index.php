@@ -2,14 +2,13 @@
 <html>
 <head>
     <title>Pages Jeux</title>
-    <script src="../lib/js/script_pages_jeux.js"></script>
     <link href="../css/style_pages_jeux.css" rel="stylesheet">
 </head>
 <body>
 <div class="slide-container">
     <div class="custom-slider fade">
         <div class="slide-index">1 / 6</div>
-        <img class="slide-img" src="../images/blackjack.png">
+        <img class="slide-img" src="../images/blackJack.png">
         <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
     </div>
     <div class="custom-slider fade">
@@ -50,4 +49,7 @@
     <span class="dot" onclick="currentSlide(6)"></span>
 </div>
 </body>
+
+<script src="../lib/js/script_pages_jeux.js"></script>
+
 </html>
