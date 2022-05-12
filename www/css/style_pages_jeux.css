@@ -2,12 +2,14 @@
     display: none;
 }
 
+
 .slide-container {
     max-width: 20em;
     position: relative;
     margin: auto;
-
+    padding-left: 3em;
 }
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -31,14 +33,15 @@
 }
 .slide-text {
     position: absolute;
-    color: #ffffff;
-    font-size: 15px;
-    padding: 15px;
-    bottom: 15px;
+    color: black;
+    font-size: 200%;
+    padding-left: 20%;
+    bottom: 10%;
     width: 100%;
-    text-align: center;
+
 }
 .slide-index {
+    display: none;
     color: #ffffff;
     font-size: 13px;
     padding: 15px;
@@ -46,11 +49,12 @@
     top: 0;
 }
 .slide-img{
-    width: 20em;
-    height: 30em;
+    width: 15em;
+    height: 25em;
     object-fit: cover;
     object-position: center;
     border-radius: 10%;
+    border: 4mm ridge rgba(200, 166, 217, 0.6);
 }
 .slide-dot{ text-align: center; }
 .dot {
@@ -79,18 +83,23 @@ body {
 }
 
 .custom-slider img {
-    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
-    -webkit-transition: all 1s ease; /* Safari et Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* Internet Explorer 9 */
-    -o-transition: all 1s ease; /* Opera */
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 .custom-slider:hover img {
-    /* L'image est grossie de 25% */
-    -webkit-transform: scale(1.05); /* Safari et Chrome */
-    -moz-transform: scale(1.05); /* Firefox */
-    -ms-transform: scale(1.05); /* Internet Explorer 9 */
-    -o-transform: scale(1.05); /* Opera */
-    transform: scale(1.05);
+
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
 }
+
+
+
+
+

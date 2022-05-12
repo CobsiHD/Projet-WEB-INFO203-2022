@@ -9,6 +9,7 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
+/* Cette fonction permet d'afficher les cartes */
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("custom-slider");
