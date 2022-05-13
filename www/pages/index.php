@@ -1,57 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <title>Pages Jeux</title>
     <link href="../css/style_pages_jeux.css" rel="stylesheet">
     <link href="../css/styles_accueil.css" rel="stylesheet">
 </head>
+
+<body>
 <header>
     <h1>Bienvenue au CASINO !</h1>
     <nav>
-        <a href="">Jouer</a>
+        <a href="../index.php">Accueil</a>
         <a href="">Info Jeux</a>
         <a href="">Classement</a>
-        <a href="">Connexion</a>
+        <a href="../admin/pages/auth/login.php">Connexion</a>
     </nav>
 </header>
-<body>
-
+<div class="main">
+<section id="steezy">
 <div class="slide-container actuel">
 
-    <div class="custom-slider fade">
+    <div class="custom-slider fade" id="prev suiv actu">
         <div class="slide-index">1 / 6</div>
             <a href="BlackJack/blackjack.php">
                 <img class="slide-img" src="../images/blackJack.png" alt="Le BlackJack" >
             </a>
         <div class="slide-text">BlackJack</div>
     </div>
-    <div class="custom-slider fade">
+    <div class="custom-slider fade" id="prev suiv actu">
         <div class="slide-index">2 / 6</div>
             <a href="Bonneteau/index.html">
                 <img class="slide-img" src="../images/bonneteau.png" alt="Le jeux du Bonneteau">
             </a>
         <div class="slide-text">Bonneteau</div>
     </div>
-    <div class="custom-slider fade">
+    <div class="custom-slider fade" id="prev suiv actu">
         <div class="slide-index">3 / 6</div>
             <a href="Dice/index.php">
                 <img class="slide-img" src="../images/imgdes.png" alt="Le jeu du dé">
             </a>
         <div class="slide-text">Le jeu du dé</div>
     </div>
-    <div class="custom-slider fade">
+    <div class="custom-slider fade" id="prev suiv actu">
         <div class="slide-index">4 / 6</div>
             <a href="Horse/index.php">
                 <img class="slide-img" src="../images/PMU.png" alt="Le PMU">
             </a>
         <div class="slide-text">La Course Hippique</div>
     </div>
-    <div class="custom-slider fade">
+    <div class="custom-slider fade" id="prev suiv actu">
         <div class="slide-index">5 / 6</div>
         <img class="slide-img" src="../images/roulette.png" alt="La roulette">
         <div class="slide-text">La Roulette</div>
     </div>
-    <div class="custom-slider fade">
+    <div class="custom-slider fade" id="prev suiv actu">
         <div class="slide-index">6 / 6</div>
         <img class="slide-img" src="../images/jackpot.png" alt="Machine à sous">
         <div class="slide-text">La Machine Sous</div>
@@ -71,7 +73,9 @@
     <span class="dot" onclick="currentSlide(5)"></span>
     <span class="dot" onclick="currentSlide(6)"></span>
 </div>
-</body>
+
+</section>
+</div>
 
 <footer>
     <div class="footer">
@@ -92,9 +96,11 @@
         </footer>
     </div>
 </footer>
+
+</body>
 <!-- content -->
-<script src="lib/js/jquery.js"></script>
-<script src="lib/js/bootstrap.js"></script>
+<script src="../lib/js/jquery.js"></script>
+<script src="../lib/js/bootstrap.js"></script>
 
 <script src="../lib/js/script_pages_jeux.js"></script>
 
