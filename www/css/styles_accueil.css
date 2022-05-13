@@ -4,7 +4,7 @@ body {
     background-image: linear-gradient(135deg,  #0b8370 0%, #b6fac3 100%);
 
     font-family: helvetica, arial, sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     padding-top: 330px;
     transition: padding-top 0.5s ease;
 }
@@ -24,8 +24,12 @@ footer, header{
 /* Header style - position top*/
 header {
     width: 100%;
-    height: 300px;
+    height: 400px;
     background-color: #b6fac3;
+    background-image: url("../images/online_casino.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: center;
     position: fixed;
     top: 0;

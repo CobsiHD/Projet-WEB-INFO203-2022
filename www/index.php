@@ -10,12 +10,11 @@
 <body>
 
 <header>
-    <h1>Bienvenue au CASINO !</h1>
     <nav>
         <a href="">Jouer</a>
         <a href="">Info Jeux</a>
         <a href="">Classement</a>
-        <a href="">Connexion</a>
+        <a href="admin/pages/auth/login.php">Connexion</a>
     </nav>
 </header>
 <div class="main">
@@ -63,7 +62,6 @@
 
 
     <main class="main">
-
         <div class="slide">
             <a bonjour></a>
         </div>
@@ -105,7 +103,7 @@
     $(function() {
         $(window).scroll(function () {
             var winTop = $(window).scrollTop();
-            if (winTop >= 30) {
+            if (winTop >= 40) {
                 $("body").addClass("sticky-header");
             } else {
                 $("body").removeClass("sticky-header");
