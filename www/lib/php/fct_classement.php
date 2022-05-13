@@ -4,29 +4,17 @@ include("../../db/db_connect.php");
 
 classement("general",$conn);
 function classement($type,$conn){
-    $sql="SELECT * FROM `classements`";
+    $sql="SELECT    * FROM `classements`";
     $ret=mysqli_query($conn, $sql);
     while ($row=mysqli_fetch_assoc($ret)){
-        $origine[]=$row;
+        $ex= array("user" => $row["user"],
+                    $type => $row[$type],);
+        $origine[]=$ex;                        /* Pour prendre tte la base de donnée */
     }
-    $temp=$origine;
-    $class=[];
-    while (count($class)!=count($origine) || count($class)<=2){
-        $limit = count($temp) -1;
-        echo($limit);
-        for($i = 0 ; $i < $limit; $i++){
-            if($temp[$i][$type] <= $temp[$i + 1][$type] ){
-                echo("coucou");
-                $indice=$i;
-            };
-            echo($i);
-        };
-        echo(count($class));
-        print_r($class);
-        $class[]=$temp[$indice];
-        $temp = array_slice($temp,0,($indice-1)).array_slice($temp,($indice+1),count($temp));
-    };
-    return $class ;
+    $type = array_column($origine,$type);
+    array_multisort($type,SORT_DESC,$origine);
+    print_r($origine);
+    return $origine ;
 }
 include("../../db/db_connect.php");
 ?>
