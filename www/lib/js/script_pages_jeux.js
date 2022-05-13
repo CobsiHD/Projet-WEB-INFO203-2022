@@ -13,6 +13,7 @@ function currentSlide(n) {
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("custom-slider");
+    var etat = document.getElementById("prev suiv actu");
     var dots = document.getElementsByClassName("dot");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
@@ -24,4 +25,13 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex-1].className += " active";
+
+    slides[slideIndex - 2].id = "prev";
+    slides[slideIndex - 1].id = "actu";
+    slides[slideIndex].id = "suiv";
+
+    console.log(etat.id);
+
 }
+
+
