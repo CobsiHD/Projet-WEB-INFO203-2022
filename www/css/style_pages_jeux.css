@@ -31,12 +31,11 @@
     background-color: rgba(0,0,0,0.5);
 }
 .slide-text {
-    position: absolute;
+    position: relative;
     color: black;
     font-size: 200%;
-    padding-left: 20%;
-    bottom: 10%;
-    width: 100%;
+    padding-left: 17%;
+    width: 75%;
 
 }
 .slide-index {
@@ -98,15 +97,11 @@ body {
     transform: scale(1.02);
 }
 
-
-
 #suiv {
     display: block;
     transform: scale(0.5);
-
 }
 
-#prev {
-    display: block;
-    transform: scale(0.5);
+#actu {
+    transform: scale(1);
 }

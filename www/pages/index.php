@@ -18,42 +18,42 @@
 </header>
 <div class="main">
 <section id="steezy">
-<div class="slide-container actuel">
+<div class="slide-container">
 
-    <div class="custom-slider fade" id="prev suiv actu">
+    <div class="custom-slider fade">
         <div class="slide-index">1 / 6</div>
             <a href="BlackJack/blackjack.php">
                 <img class="slide-img" src="../images/blackJack.png" alt="Le BlackJack" >
             </a>
         <div class="slide-text">BlackJack</div>
     </div>
-    <div class="custom-slider fade" id="prev suiv actu">
+    <div class="custom-slider fade">
         <div class="slide-index">2 / 6</div>
             <a href="Bonneteau/index.html">
                 <img class="slide-img" src="../images/bonneteau.png" alt="Le jeux du Bonneteau">
             </a>
         <div class="slide-text">Bonneteau</div>
     </div>
-    <div class="custom-slider fade" id="prev suiv actu">
+    <div class="custom-slider fade">
         <div class="slide-index">3 / 6</div>
             <a href="Dice/index.php">
                 <img class="slide-img" src="../images/imgdes.png" alt="Le jeu du dé">
             </a>
         <div class="slide-text">Le jeu du dé</div>
     </div>
-    <div class="custom-slider fade" id="prev suiv actu">
+    <div class="custom-slider fade">
         <div class="slide-index">4 / 6</div>
             <a href="Horse/index.php">
                 <img class="slide-img" src="../images/PMU.png" alt="Le PMU">
             </a>
         <div class="slide-text">La Course Hippique</div>
     </div>
-    <div class="custom-slider fade" id="prev suiv actu">
+    <div class="custom-slider fade">
         <div class="slide-index">5 / 6</div>
         <img class="slide-img" src="../images/roulette.png" alt="La roulette">
         <div class="slide-text">La Roulette</div>
     </div>
-    <div class="custom-slider fade" id="prev suiv actu">
+    <div class="custom-slider fade">
         <div class="slide-index">6 / 6</div>
         <img class="slide-img" src="../images/jackpot.png" alt="Machine à sous">
         <div class="slide-text">La Machine Sous</div>
