@@ -27,11 +27,20 @@ function showSlides(n) {
 
     if (slideIndex === 6) { slides[slideIndex - 1].id = "actu";}
 
-    slides[slideIndex - 1].style.display = "block";
-    slides[slideIndex].style.display = "block";
+    if (slideIndex === 1) { slides[slideIndex - 1].style.display = "block";
+        slides[slideIndex].style.display = "block";
+    }
+    else {
+        slides[slideIndex - 1].style.display = "block";
+        slides[slideIndex].style.display = "block";
+        slides[slideIndex - 2].style.display = "block";
+    }
+
+
 
     slides[slideIndex].id = "suiv";
     slides[slideIndex - 1].id = "actu";
+    slides[slideIndex - 2].id = "prev";
 
     dots[slideIndex-1].className += " active";
 
