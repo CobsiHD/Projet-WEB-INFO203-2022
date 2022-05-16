@@ -1,5 +1,6 @@
 <?php
 include("../../../db/db_connect.php");
+include("../../lib/crud/authentification.crud.php");
 session_start() ;
 if(isset($_POST["login"]) && isset($_POST["passwd"])){
     $log=$_POST["login"];
@@ -31,7 +32,7 @@ if(isset($_POST["login"]) && isset($_POST["passwd"])){
             <div class="container">
                 <div class="form">
                 <h2>Connectez-vous !</h2>
-                <form method="POST" action="login_form.php">
+                <form method="POST" action="login.php">
                     <div class="inputBox">
                         <input type="text" name="login" placeholder="Identifiant">
                     </div>

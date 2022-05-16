@@ -13,7 +13,6 @@ function classement($type,$conn){
     }
     $type = array_column($origine,$type);
     array_multisort($type,SORT_DESC,$origine);
-    print_r($origine);
     return $origine ;
 }
 include("../../db/db_connect.php");

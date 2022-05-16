@@ -1,0 +1,66 @@
+* {
+    font-family: "Source Code Pro", monospace;
+}
+
+/* Pour faire le tableau */
+table {
+    border-collapse: collapse;
+    margin : 15px 0;
+    font-size: 1em;
+    min-width: 60%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+table thead tr {
+    background-color: blueviolet;
+    color:#fff;
+    text-align: left;
+    font-weight: bold;
+}
+table td {
+    padding: 2% 10%;
+}
+table tbody tr {
+    border-bottom: 1px solid rgb(163, 163, 163);
+}
+table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+table tbody tr:last-of-type {
+    border-bottom: 2px solid blueviolet;
+}
+table tbody tr.user {
+    font-weight: bold;              /*Pour mettre en surbrillance la personne connecté */
+    color:blueviolet;
+}
+/* fin du css du tableau */
+
+/* centrage du tableau */
+.tab {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.haut-tab{
+    background-color: blueviolet;
+    color:#fff;
+    border-radius: 10px;
+    padding : 0.5em;
+    font-size: 1.25em;
+}
+
+.haut-tab ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.haut-tab li:hover{
+    text-decoration: underline;
+}
+.cache{
+    visibility: hidden;
+}
