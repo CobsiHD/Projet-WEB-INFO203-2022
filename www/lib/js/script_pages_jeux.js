@@ -25,10 +25,20 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
 
-    if (slideIndex === 6) { slides[slideIndex - 1].id = "actu";}
+    if (slideIndex === 6) { slides[slideIndex - 1].id = "actu";
+    slides[4].style.display = "block";
+    slides[0].style.display = "block";
+    slides[4].id = "prev";
+    slides[0].id = "suiv";
+    slides[slideIndex - 1].style.order = "-1";
+    slides[4].style.order = "-1";
+    }
 
     if (slideIndex === 1) { slides[slideIndex - 1].style.display = "block";
         slides[slideIndex].style.display = "block";
+        slides[5].style.display = "block";
+        slides[5].id = "prev";
+        slides[5].style.order = "-1";
     }
     else {
         slides[slideIndex - 1].style.display = "block";
