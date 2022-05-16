@@ -5,40 +5,49 @@
   <meta charset="utf-8">
   <title>Accueil</title>
   <link rel="stylesheet" href="./css/styles_accueil.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
 
 </head>
 <body>
+<!-- Navbar-->
+<header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top py-3"> <!-- / / espacement bottom-top -->
+        <div class="container"><a href="#" class="navbar-brand ">Casino</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
 
-<header>
-    <nav>
-        <a href="pages/index.php">Jouer</a>
-        <a href="">Info Jeux</a>
-        <a href="">Classement</a>
-        <a href="admin/pages/auth/login.php">Connexion</a>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link ">Accueil <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="pages/index.php" class="nav-link ">Jouer</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link ">Classement</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link ">Info jeux</a></li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="admin/pages/auth/login.php" class="nav-link rp-4">Se connecter</a></li>
+                    <li class="nav-item"><a href="admin/pages/auth/create_account.php" class="nav-link rp-4">s'inscrire</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
-<div class="main">
-    <section id='steezy'>
-        <h2> Lorem ipsum dolor sit amet</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex libero cupiditate deserunt earum, fuga, ab labore esse animi, nihil est tenetur non delectus perferendis. Maxime accusamus ea rem sint at!</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ut aspernatur omnis neque iusto. Veritatis rem ad atque optio perferendis. Dolorum qui consequatur, repellat soluta impedit porro totam molestiae sit.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus iusto, omnis quas, rem minus cupiditate, sunt voluptates minima sint nemo ipsa itaque consequatur dolor, quam necessitatibus vitae. Quod, eaque, quam.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum!</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum!</p>
-    </section>
-</div>
 
 
-    <main class="main">
-        <div class="slide">
-            <a bonjour></a>
+<!-- Contenu-->
+<div class="container_main">
+    <div class="content_main">
+
+        <div class="titre">
+            <h1 class="online "><span>Online</span></h1>
+            <h1 class="casino ">Casino</h1>
         </div>
 
-    </main>
+        <div class="grid_bouton"><div class="bouton"><a href="pages/index.php">Jouer</a></div></div>
+    </div>
+</div>
+
     <footer>
         <div class="footer">
             <footer>
@@ -60,22 +69,29 @@
     </footer>
 
 <!-- content -->
-<script src="lib/js/jquery.js"></script>
-<script src="lib/js/bootstrap.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></link>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+
+
 
 </body>
 </html>
 
 <script>
     /* Script Pour scroll header */
-    $(function() {
-        $(window).scroll(function () {
-            var winTop = $(window).scrollTop();
-            if (winTop >= 30) {
-                $("body").addClass("sticky-header");
+    $(function () {
+        $(window).on('scroll', function () {
+            if ( $(window).scrollTop() > 10 ) {
+                $('.navbar').addClass('active');
             } else {
-                $("body").removeClass("sticky-header");
+                $('.navbar').removeClass('active');
             }
         });
     });
+
 </script>
+
+
+
+
