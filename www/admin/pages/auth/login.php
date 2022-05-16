@@ -39,7 +39,7 @@ if(isset($_POST["login"]) && isset($_POST["passwd"])){
                         <input type="password" name="passwd" placeholder="Mot de passe">
                     </div>
                     <div class="inputBox">
-                        <input type="submit" value="Connection">
+                        <input type="submit" value="Connexion">
                     </div>
                     <p class="sign">Vous n'avez pas de Compte ? <a href="create_account.php">Inscrivez-vous</a></p>
                 </form>
