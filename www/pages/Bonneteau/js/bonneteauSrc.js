@@ -12,7 +12,7 @@ function shuffle() {
     allcards[redcard].setAttribute('src', "images/DPique.png")
     let random = Math.floor(Math.random() * allcards.length); // un nombre au hasard
     let card = allcards[random];
-    card.setAttribute('src', "images/red.png");
+    card.setAttribute('src', "images/ACoeur.jpg");
     redcard = random
 }
 
