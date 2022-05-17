@@ -7,9 +7,6 @@
 */
 
 body {
-    background-size: cover;
-    background: #111111 url("../images/background_casino.png") no-repeat center;
-
     height: 100vh;
     width: auto;
 
@@ -56,7 +53,7 @@ body {
 }
 
 
-/* Change navbar styling on scroll */
+/* Change style navbar au scroll */
 .navbar.active {
     background: #fff;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
@@ -68,7 +65,7 @@ body {
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #555;
+    color: #000;
     text-decoration: none;
 }
 
@@ -77,7 +74,7 @@ body {
 }
 
 
-/* Change navbar styling on small viewports */
+/* Change style navbar pour petit ecran */
 @media (max-width: 991.98px) {
     .navbar {
         background: #fff;
@@ -95,6 +92,7 @@ body {
 *
 */
 .container_main{
+    background: #111111 url("../images/background_casino.png") no-repeat center;
     height: 100%;
     width: auto;
 }
@@ -197,6 +195,44 @@ body {
     text-decoration: none;
 }
 
+/*
+*
+* ==========================================
+* Text
+* ==========================================
+*
+*/
+.container_text{
+    display: flex;
+    justify-content: center;
+    min-width: 20vh;
+}
+
+.text{
+    text-align: justify;
+    padding: 10vh 20%;
+
+}
+
+.text p{
+    padding: 2vh;
+}
+.text h1, .text h2, .text h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text h1{
+    font-size:3em;
+}
+.text h2{
+    font-size:1.5em;
+}
+.text h3{
+    font-size:0.8em;
+}
+
+.text ul{
+    padding-left:5vh
+}
 
 
 /*
@@ -211,8 +247,9 @@ body {
 
 .footer {
     padding:40px 0;
-    background-color:#ffffff;
-    color:#4b4c4d;
+    background: rgb(0,0,0);
+    background: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(143,37,129,1) 36%, rgba(147,13,130,1) 64%, rgba(40,0,42,1) 100%);
+    color:#fff;
 }
 
 .footer ul {
