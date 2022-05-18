@@ -11,13 +11,20 @@ function tableau_classement($tab_class_general,$type){
                 echo("<td class='user'>");
                 echo($user_place[$type]);
                 echo("</td></tr>");
-            }
-        };
-        echo("<tr><td>$place</td>");
-        echo("<td>".$user_place["user"]."</td>");
-        echo("<td>");
-        echo($user_place[$type]);
-        echo("</td></tr>");
+            }else {
+                echo("<tr><td>$place</td>");
+                echo("<td>".$user_place["user"]."</td>");
+                echo("<td>");
+                echo($user_place[$type]);
+                echo("</td></tr>");
+                };
+        }else {
+            echo("<tr><td>$place</td>");
+            echo("<td>".$user_place["user"]."</td>");
+            echo("<td>");
+            echo($user_place[$type]);
+            echo("</td></tr>");
+            };
     };
     echo("</tbody>");
 }
