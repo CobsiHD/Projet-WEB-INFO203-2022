@@ -12,7 +12,7 @@
     <nav>
         <a href="../index.php">Accueil</a>
         <a href="">Info Jeux</a>
-        <a href="">Classement</a>
+        <a href="classements/classement.php">Classement</a>
         <a href="../admin/pages/auth/login.php">Connexion</a>
     </nav>
 </header>

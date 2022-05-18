@@ -11,20 +11,16 @@ session_start();
   <link rel="stylesheet" href="../../css/styles_classement.css">
 </head>
 
-
-
-
-
 <section>
     <nav class="haut-tab">
         <ul>
-            <li>Géneral</li>
-            <li>Black Jack</li>
-            <li>Bonneteau</li>
-            <li>Courses à Cheval</li>
-            <li>Dés</li>
-            <li>Machine à Sous</li>
-            <li>Roulette</li>
+            <button onclick="show(event)" id="general"><li>Géneral</li></button>
+            <button onclick="show(event)" id="blackjack"><li>Black Jack</li></button>
+            <button onclick="show(event)" id="bonneteau"><li>Bonneteau</li></button>
+            <button onclick="show(event)" id="chevaux"><li>Courses à Cheval</li></button>
+            <button onclick="show(event)" id="des"><li>Dés</li></button>
+            <button onclick="show(event)" id="machine_a_sous"><li>Machine à Sous</li></button>
+            <button onclick="show(event)" id="roulette"><li>Roulette</li></button>
         </ul>
     </nav>
     <nav class="tab">
@@ -75,6 +71,8 @@ session_start();
     </nav>
 </section>
 </body>
+
+<script src="../../lib/js/classement.js"></script>
 </html>
 <?php 
 include("../../db/db_disconnect.php");

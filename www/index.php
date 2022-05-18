@@ -21,7 +21,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a href="#" class="nav-link ">Accueil <span class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a href="pages/index.php" class="nav-link ">Jouer</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link ">Classement</a></li>
+                    <li class="nav-item"><a href="pages/classements/classement.php" class="nav-link ">Classement</a></li>
                     <li class="nav-item"><a href="pages/info_jeux_index.php" class="nav-link ">Info jeux</a></li>
                 </ul>
 

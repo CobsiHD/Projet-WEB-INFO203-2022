@@ -4,7 +4,7 @@
     <title>Bonneteau</title>
     <link rel="stylesheet" type="text/css" href="css/styleBonneteau.css">
     <meta charset="utf-8"/>
-    <script src="js/bonneteauSrc.js"></script>
+
 </head>
 
 <body>
@@ -36,12 +36,25 @@
         </div>
     </div>
 
+    <label for="pari">Veuillez Entrer votre mise :</label>
+
+    <select name="mises" id="pari">
+        <option value="">--Please choose an option--</option>
+        <option value="10">10</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+        <option value="400">400</option>
+        <option value="500">500</option>
+    </select>
+
     <!-- un bouton generer -->
     <button id="btn">Générer</button>
 </div>
 
 <!-- script javascript -->
-
+<script src="js/bonneteauSrc.js"></script>
 
 </body>
 </html>

@@ -5,6 +5,8 @@ btn.addEventListener('click', shuffle)
 
 let redcard = 0;
 
+
+
 shuffle()
 
 function shuffle() {
@@ -26,4 +28,12 @@ function flip(event){
             element.style.transform = "rotateY(180deg)";
         }
     }
+}
+
+function win(event){
+
+    let element = event.currentTarget;
+
+    if (element.className)
+
 }
