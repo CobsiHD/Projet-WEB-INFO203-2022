@@ -31,7 +31,7 @@ table tbody tr:nth-of-type(even){
 table tbody tr:last-of-type {
     border-bottom: 2px solid blueviolet;
 }
-table tbody tr.user {
+table tbody tr .user {
     font-weight: bold;              /*Pour mettre en surbrillance la personne connecté */
     color:blueviolet;
 }
