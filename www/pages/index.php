@@ -30,7 +30,7 @@
     </div>
     <div class="custom-slider fade">
         <div class="slide-index">2 / 6</div>
-            <a href="Bonneteau/index.html">
+            <a href="Bonneteau/index.php">
                 <img class="slide-img" src="../images/bonneteau.png" alt="Le jeux du Bonneteau">
             </a>
         <div class="slide-text">Bonneteau</div>

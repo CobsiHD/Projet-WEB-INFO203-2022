@@ -3,6 +3,8 @@ let redcard = 0;
 
 shuffle()
 
+var win = false;
+
 function shuffle() {
     let allcards = document.getElementsByClassName("card-img");
     allcards[redcard].setAttribute('src', "images/A-S.png");
@@ -25,10 +27,7 @@ function flip(event){
     }
 }
 
-
-function win(event){
-
-    var win = false;
+function gagner(event){
 
     let evenement = event.currentTarget;
 
@@ -37,13 +36,11 @@ function win(event){
     if(idImage.id === "coeur"){
 
         win = true;
-
-    }
-    else{
-        win = false;
     }
 
     setTimeout(pageGagne,1050);
+
+    return win;
 
 }
 
