@@ -37,6 +37,7 @@ if (!isset($_SESSION["log"])){
 			<button id='hit'>Prendre une Carte </button>
 			<button id='stay'>Garder votre Main </button>
 			<p id='result'></p></section>");
+			$_SESSION["mise"]=$_POST["mise"];
 		}else {
 			echo ("<section class='auth'><div class='box'>
 					<div class='container'>

@@ -18,16 +18,19 @@ include("../admin/lib/crud/classements.crud.php");
 if (isset($_GET)){
     if (isset($_GET["win"])){
         $win = $_GET["win"];
-        win($_SESSION["mise"] , $_SESSION["jeux"], $win , $_SESSION["user"]);
-        $_SESSION["mise"]=0 ; 
+        if($win=="true"){
+            echo("<h1>Tu as Gagné !</h1>");
+            $winner=TRUE;
+        }
+        elseif($win=="false") {
+            $winner=FALSE;
+            echo("<h1>Tu as Perdu !</h1>");
+        }
+        echo($_SESSION["mise"]);
+        win($_SESSION["mise"],$_SESSION["jeux"],$winner,$_SESSION["user"]);
     }
 }
-if($win=="true"){
-    echo("<h1>Tu as Gagné !</h1>");
-}
-elseif($win=="false") {
-    echo("<h1>Tu as Perdu !</h1>");
-}
+
 
 echo("<a href=");
 echo($_SESSION["pages"]);
