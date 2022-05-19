@@ -15,5 +15,5 @@ function classement($type,$conn){
     array_multisort($type,SORT_DESC,$origine);
     return $origine ;
 }
-include("../../db/db_connect.php");
+include("../../db/db_disconnect.php");
 ?>
