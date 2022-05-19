@@ -22,23 +22,23 @@ if (!isset($_SESSION["log"])){
 <body>
 <header>
 </header>
-<section>
+
 	<?php 
 	if (isset($_POST["mise"])){
 		if ($_POST["mise"]!=""){
-			echo( "<h2> Dealer : <span id='dealer-score'></span></h2>
+			echo( "<section><h2> Dealer : <span id='dealer-score'></span></h2>
 			<div id='dealer-cards'>
 				<img id='hide' src='../../images/carte/BACK.png'>
-			</div>'
+			</div>
 		
 			<h2>Vos Cartes : <span id='player-score'></span> </h2>
 			<div id='player-cards'></div>
 			<br>
 			<button id='hit'>Prendre une Carte </button>
 			<button id='stay'>Garder votre Main </button>
-			<p id='result'></p>");
+			<p id='result'></p></section>");
 		}else {
-			echo ("<div class='box'>
+			echo ("<section class='auth'><div class='box'>
 					<div class='container'>
 						<div class='form'>
 							<h2>Connectez-vous !</h2>
@@ -53,10 +53,10 @@ if (!isset($_SESSION["log"])){
 							</form>
 						</div>
 					</div>
-        		</div>");
+        		</div></section>");
 		}
 	}else {
-		echo ("<div class='box'>
+		echo ("<section class='auth'><div class='box'>
 					<div class='container'>
 						<div class='form'>
 							<h2>Connectez-vous !</h2>
@@ -71,11 +71,9 @@ if (!isset($_SESSION["log"])){
 							</form>
 						</div>
 					</div>
-        		</div>");
+        		</div></section>");
 	};
 	?>
-	
-</section>
 <footer>
 </footer>
 

@@ -5,26 +5,56 @@
 }
 section {
     text-align: center;
+    background-color: #0e5442;
+    color : white ;
 }
 
 button {
     width : 300px ;
     height : 100px ;
     border : none ;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    border: 5px solid rgb(17, 243, 224);
+    position: relative;
+    background-color: #0e5442;
+    z-index: 1;
     color : white ;
-    
 }
-
+button:hover {
+    color :rgb(72, 70, 72);
+    cursor: pointer;
+}
+button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left : 50%;
+    right : 50%;
+    bottom : 0;
+    opacity: 0 ;
+    content:"";
+    background-color:rgb(17, 243, 224) ;
+}
+button:hover:before{
+    transition: 0.5s all ease;
+    left : 0;
+    right : 0;
+    opacity: 1;
+    z-index: -1;
+}
 
 
 #dealer-cards img {
-    height : 50%;
-    width : 40%;
+    height : 25%;
+    width : 10%;
     margin : 1px;
 }
 #player-cards img {
-    height : 50%;
-    width : 45%;
+    height : 25%;
+    width : 10%;
     margin : 1px;
 }
 #hit {
