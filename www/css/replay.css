@@ -48,5 +48,4 @@ a:hover svg rect {
     stroke-dasharray: 100,400;
     stroke-dashoffset: 220;
     stroke : #00bcd4;
-    cursor: pointer;
 }
