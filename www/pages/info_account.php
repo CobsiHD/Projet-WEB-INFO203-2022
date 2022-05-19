@@ -6,7 +6,8 @@ session_start() ;
     <head>
         <meta charset="UTF-8">
         <title> Info du Compte </title>
-	    <link rel="stylesheet" href="../../../css/styles_auth.css">
+	    <link rel="stylesheet" href="../css/styles_auth.css">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     </head>
     <body>
     <div class="box">

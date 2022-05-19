@@ -47,6 +47,8 @@ function showSlides(n) {
 
 
 
+
+
     slides[slideIndex].id = "suiv";
     slides[slideIndex - 1].id = "actu";
     slides[slideIndex - 2].id = "prev";

@@ -16,12 +16,13 @@ function shuffle() {
     let card = allcards[random];
     card.setAttribute('src', "images/ACoeur.jpg");
     redcard = random
+    document.getElementById("mise").value = 0;
 }
 
 function flip(event){
     let element = event.currentTarget;
     if (element.className === "card"){
-        if(element.style.transform == "rotateY(180deg)"){
+        if(element.style.transform === "rotateY(180deg)"){
             element.style.transform = "rotateY(0deg)";
         }
         else{
@@ -32,8 +33,22 @@ function flip(event){
 
 function win(event){
 
-    let element = event.currentTarget;
+    var valeurInput =  document.getElementById("mise").value;
+    console.log(valeurInput)
 
-    if (element.className)
+}
 
+function miser(){
+
+    if (document.getElementById("mise").value !== 0){
+
+        var front = document.getElementsByClassName("front");
+        var i;
+
+        for (i = 0; i < 3; i++) {
+
+            front.className = "back";
+        }
+
+    }
 }

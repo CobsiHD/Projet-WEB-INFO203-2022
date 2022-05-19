@@ -9,6 +9,7 @@ session_start();
   <meta charset="utf-8">
   <title>Classement</title>
   <link rel="stylesheet" href="../../css/styles_classement.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <section>

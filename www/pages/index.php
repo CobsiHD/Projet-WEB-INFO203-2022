@@ -4,6 +4,7 @@
     <title>Pages Jeux</title>
     <link href="../css/style_pages_jeux.css" rel="stylesheet">
     <link href="../css/styles_accueil.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
 <body>
