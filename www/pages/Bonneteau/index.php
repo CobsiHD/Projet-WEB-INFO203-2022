@@ -55,6 +55,7 @@ if (isset($_POST["mise"])){
     </div>
 
 </div>");
+$_SESSION["mise"]=$_POST["mise"];
     }else {
         echo ("<section class='auth'><div class='box'>
 					<div class='container'>

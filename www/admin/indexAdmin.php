@@ -1,6 +1,13 @@
 <?php
 include('lib/crud/authentification.crud.php')
-
+session_start();
+if (isset($_SESSION["user"])){
+    if ($_SESSION["user"]!="admin"){
+        header("Location:../index.php");
+    }else {
+        header("Location:./indexAdmin.php");
+    }
+}
 ?>
 
 <!doctype html>
@@ -74,6 +81,7 @@ if (isset($_POST["loginModif"]) &&
 {
     $log=$_POST["loginModif"];
     $pwd=$_POST["pwdModif"];
+    $pwd= md5($pwd);
 
 
     update_auth($conn, $log, $pwd);

@@ -27,7 +27,7 @@ session_start() ;
                 echo("</strong><br> Dés : <strong>".$info["des"]);
                 echo("</strong><br> Machine à sous : <strong>".$info["machine_a_sous"]);
                 echo("</strong><br> Roulette : <strong>".$info["roulette"]);
-                echo('</strong></p>');
+                echo('</strong>');
                 ?>
                 </div>
             </div>
