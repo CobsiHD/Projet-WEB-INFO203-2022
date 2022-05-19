@@ -28,6 +28,7 @@ if (isset($_GET)){
         }
 
         win($_SESSION["mise"],$_SESSION["jeux"],$winner,$_SESSION["user"]);
+        $_SESSION["mise"]=0;
     }
 }
 

@@ -1,11 +1,11 @@
 <?php
-include('lib/crud/authentification.crud.php')
+include('lib/crud/authentification.crud.php');
 session_start();
 if (isset($_SESSION["user"])){
     if ($_SESSION["user"]!="admin"){
         header("Location:../index.php");
     }else {
-        header("Location:./indexAdmin.php");
+        header("Location:indexAdmin.php");
     }
 }
 ?>

@@ -17,17 +17,25 @@ session_start() ;
                 <h2> Information de votre Compte !</h2>
                 <?php 
                 include("../admin/lib/crud/classements.crud.php");
-                $info=select_class($conn,$_SESSION["user"]);
-                echo("<p class = 'sign'>Votre nom d'utilisateurs est <strong>".$info["user"]);
-                echo("</strong><br> Votre argent restant est : <strong>".$info["general"]);
-                echo("</strong><br> Argent gagné ou perdu aux jeux :");
-                echo("<br> BlackJack : <strong>".$info["blackjack"]);
-                echo("</strong><br> Bonnetaeau : <strong>".$info["bonneteau"]);
-                echo("</strong><br> Courses à Cheval : <strong>".$info["chevaux"]);
-                echo("</strong><br> Dés : <strong>".$info["des"]);
-                echo("</strong><br> Machine à sous : <strong>".$info["machine_a_sous"]);
-                echo("</strong><br> Roulette : <strong>".$info["roulette"]);
-                echo('</strong>');
+                include("../admin/lib/crud/authentification.crud.php");
+                if ($_SESSION["user"]=='admin'){
+                    $info = select_auth($conn,"admin");
+                    echo("<p class = 'sign'>Votre nom d'utilisateurs est <strong>".$info["login"]);
+                    echo("</strong></p>");
+                    echo("<p class='sign'><a href='../admin/indexAdmin.php'>Accès à la Page admin</a></p>");
+                }else {
+                    $info=select_class($conn,$_SESSION["user"]);
+                    echo("<p class = 'sign'>Votre nom d'utilisateurs est <strong>".$info["user"]);
+                    echo("</strong><br> Votre argent restant est : <strong>".$info["general"]);
+                    echo("</strong><br> Argent gagné ou perdu aux jeux :");
+                    echo("<br> BlackJack : <strong>".$info["blackjack"]);
+                    echo("</strong><br> Bonnetaeau : <strong>".$info["bonneteau"]);
+                    echo("</strong><br> Courses à Cheval : <strong>".$info["chevaux"]);
+                    echo("</strong><br> Dés : <strong>".$info["des"]);
+                    echo("</strong><br> Machine à sous : <strong>".$info["machine_a_sous"]);
+                    echo("</strong><br> Roulette : <strong>".$info["roulette"]);
+                    echo('</strong></p>');
+                }
                 ?>
                 </div>
             </div>
