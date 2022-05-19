@@ -28,7 +28,7 @@ if(isset($_POST["login"]) && isset($_POST["passwd"])){
 	<link rel="stylesheet" href="../../../css/styles_auth.css">
 </head>
 <body>
-    <section>
+    <section class="auth">
         <div class="box">
             <div class="container">
                 <div class="form">
