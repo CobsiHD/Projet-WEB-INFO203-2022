@@ -25,6 +25,7 @@ function flip(event){
     }
 }
 
+
 function win(event){
 
     var win = false;
@@ -42,8 +43,12 @@ function win(event){
         win = false;
     }
 
-window.location.replace("http://os-vps418.infomaniak.ch:1180/l1_info_5/www/pages/replay.php?win=" + win)
+    setTimeout(pageGagne,1050);
+
 }
 
+function pageGagne() {
 
+    window.location.replace("http://os-vps418.infomaniak.ch:1180/l1_info_5/www/pages/replay.php?win=" + win)
 
+}

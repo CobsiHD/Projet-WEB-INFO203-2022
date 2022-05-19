@@ -17,7 +17,7 @@ function update_auth($conn, $log, $pwd){
         return $ret ; 
 }
 function delete_auth($conn, $log){
-	$sql="DELETE FROM `	authentification` WHERE `login`='$log'" ;
+	$sql="DELETE FROM `authentification` WHERE `login`='$log'" ;
 	$ret=mysqli_query($conn, $sql) ;
 	return $ret ; 
 }
