@@ -7,7 +7,7 @@ session_start();
 <head>
 	<meta charset="UTF-8">
     <title> Replay </title>
-    <link rel="stylesheet" href="../../css/replay.css">
+    <link rel="stylesheet" href="..\css\replay.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -23,10 +23,10 @@ if (isset($_GET)){
     }
 }
 if($win=="true"){
-    echo("Tu as Gagné !");
+    echo("<h1>Tu as Gagné !</h1>");
 }
 elseif($win=="false") {
-    echo("Tu as Perdu !");
+    echo("<h1>Tu as Perdu !</h1>");
 }
 
 echo("<a href=");
@@ -34,9 +34,12 @@ echo($_SESSION["pages"]);
 echo(">")
 
 ?>
+
 <svg>
     <rect></rect>
-</svg>Rejouer
+</svg>
+Rejouer
+
 <?php
 echo("</a>");
 ?>
