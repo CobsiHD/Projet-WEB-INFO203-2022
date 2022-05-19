@@ -7,7 +7,7 @@ if(isset($_SESSION["log"]) && isset($_SESSION["user"])){
                     <li class='nav-item'><a href='./admin/pages/auth/create_account.php' class='nav-link rp-4'>s'inscrire</a></li>
     </ul>");
     } else {
-        echo("<ul> class='navbar-nav ml-auto'>");
+        echo("<ul class='navbar-nav ml-auto'>");
         echo("<li class='nav-item'><img src='./images/img_profil.jpeg'></li>");
         echo("<li class='nav-item'> <ul><li>User :");
         echo($_SESSION["user"]);

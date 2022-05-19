@@ -18,7 +18,7 @@ include("../admin/lib/crud/classements.crud.php");
 if (isset($_GET)){
     if (isset($_GET["win"])){
         $win = $_GET["win"];
-        // win($_SESSION["mise"] , $_SESSION["jeux"], $win , $_SESSION["user"]);
+        win($_SESSION["mise"] , $_SESSION["jeux"], $win , $_SESSION["user"]);
         $_SESSION["mise"]=0 ; 
     }
 }
