@@ -1,5 +1,6 @@
 <?php
 include('lib/crud/authentification.crud.php');
+include('lib/crud/classements.crud.php');
 session_start();
 if (isset($_SESSION["user"])){
     if ($_SESSION["user"]!="admin"){
@@ -68,6 +69,81 @@ if (isset($_SESSION["user"])){
     </form>
 </table>
 
+<table>
+    <h1>Modifier le classement</h1>
+
+    <form method="post" action="indexAdmin.php" enctype="multipart/formdata">
+        <tr>
+            <td>
+                <label for="loginClass">Login :</label>
+            </td>
+            <td>
+                <input type="text" name="loginClass" id="loginClass">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="general">Sous total :</label>
+            </td>
+            <td>
+                <input type="number" name="general" id="general">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="des">Sous pour le dés :</label>
+            </td>
+            <td>
+                <input type="number" name="des" id="des">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="bonneteau">Sous pour le bonneteau :</label>
+            </td>
+            <td>
+                <input type="number" name="bonneteau" id="bonneteau">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="roulette">Sous pour la roulette :</label>
+            </td>
+            <td>
+                <input type="number" name="roulette" id="roulette">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="blackjack">Sous pour le blackjack :</label>
+            </td>
+            <td>
+                <input type="number" name="blackjack" id="blackjack">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="machine_a_sous">Sous pour la machine à sous :</label>
+            </td>
+            <td>
+                <input type="number" name="machine_a_sous" id="machine_a_sous">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="chevaux">Sous pour les chevaux :</label>
+            </td>
+            <td>
+                <input type="number" name="chevaux" id="chevaux">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Modifier">
+            </td>
+        </tr>
+    </form>
+</table>
 
 
 <?php
@@ -92,6 +168,30 @@ if (isset($_POST["loginSuppr"]))
     $log=$_POST["loginSuppr"];
 
     delete_auth($conn, $log);
+}
+
+
+if (isset($_POST["loginClass"]) &&
+    isset($_POST["general"])   &&
+    isset($_POST["des"]) &&
+    isset($_POST["bonneteau"]) &&
+    isset($_POST["roulette"]) &&
+    isset($_POST["blackjack"]) &&
+    isset($_POST["machine_a_sous"]) &&
+    isset($_POST["chevaux"]))
+{
+    $user=$_POST["loginClass"];
+    $general=$_POST["general"];
+    $des=$_POST["des"];
+    $bonneteau=$_POST["bonneteau"];
+    $bonneteau=$_POST["bonneteau"];
+    $roulette=$_POST["roulette"];
+    $blackjack=$_POST["blackjack"];
+    $machine_a_sous=$_POST["machine_a_sous"];
+    $chevaux=$_POST["chevaux"];
+
+
+    update_class($conn, $user,$general,$des,$bonneteau,$roulette,$blackjack,$machine_a_sous,$chevaux);
 }
 
 ?>
