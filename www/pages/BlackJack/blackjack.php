@@ -5,7 +5,7 @@ if (!isset($_SESSION["log"])){
 } elseif (!($_SESSION["log"])){
 	header("Location:../../admin/pages/auth/login.php") ;
 } else {
- 	$_SESSION["pages"]="http://os-vps418.infomaniak.ch:1180/l1_info_5/www/pages//BlackJack/blackjack.php";
+ 	$_SESSION["pages"]="http://os-vps418.infomaniak.ch:1180/l1_info_5/www/pages/BlackJack/blackjack.php";
 	$_SESSION["jeux"]="blackjack";
 }
 ?>
@@ -77,8 +77,3 @@ if (!isset($_SESSION["log"])){
 
 </body>
 </html>
-<?php
-/*
-include("../../db/db_disconnect.php");
-*/
-?>
