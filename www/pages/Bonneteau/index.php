@@ -60,7 +60,7 @@ $_SESSION["mise"]=$_POST["mise"];
         echo ("<section class='auth'><div class='box'>
 					<div class='container'>
 						<div class='form'>
-							<form method='POST' action='blackjack.php'>
+							<form method='POST' action='index.php'>
 							<div class='inputBox'>
 								<p class='sign'>Mise : </p><input type='number' name='mise'>
 							</div>
@@ -77,7 +77,7 @@ $_SESSION["mise"]=$_POST["mise"];
     echo ("<section class='auth'><div class='box'>
 					<div class='container'>
 						<div class='form'>
-							<form method='POST' action='blackjack.php'>
+							<form method='POST' action='index.php'>
 							<div class='inputBox'>
 								<p class='sign'>Mise : </p><input type='number' name='mise'>
 							</div>
