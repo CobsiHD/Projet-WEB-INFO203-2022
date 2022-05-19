@@ -62,7 +62,4 @@ table tbody tr .user {
 .haut-tab li:hover{
     text-decoration: underline;
 }
-.cache{
-    visibility: hidden;
-}
 
