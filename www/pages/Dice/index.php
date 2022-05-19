@@ -18,7 +18,6 @@
 
 </header>
 
-
 <section class="container">
     <div id="cube">
         <div class="front" id="1">
@@ -58,34 +57,70 @@
         </div>
     </div>
 
+    <div class="fomulaire">
+        <label for="nb">Entrez votre choix</label>
+        <input type="number" id=nb name="nombre" required minlength="0" maxlength="4" size="10">
+
+        <label for="mise">Entrez votre mise</label>
+        <input type="number" id="mise" name="mise" required minlength="10" maxlength="4" size="10" step="10">
+
+
+
+    </div>
+
     <script>
         var cube = document.getElementById('cube');
 
         var min = 1;
-        var max = 30;
+        var max = 6;
 
         cube.onclick = function() {
-            var xRand = getRandom(max, min);
-            var yRand = getRandom(max, min);
+            var nb = document.getElementById("nb").value;
+            var rand = getRandom(max, min);
+            var resultat = false;
+
+            if(rand === 6){
+               var yrand = 0;
+               var xrand = -1620;
+            } else if( rand === 5){
+                var yrand = 0;
+                var xrand = -1530;
+            }else if( rand === 4){
+                var yrand = 1530;
+                var xrand = 0;
+            }else if( rand === 3){
+                var yrand = -1530;
+                var xrand = 0;
+            }else if( rand === 2){
+                var yrand = 0;
+                var xrand = 1530;
+            }else if( rand === 1){
+                var yrand = 1440;
+                var xrand = 1440;
+            }
+
+            let yrot = 1800 +yrand;
+            let xrot = 1800 +xrand;
+
+            cube.style.transform = 'rotateX('+xrot+'deg) rotateY('+yrot+'deg)';
 
 
 
-            console.log(max, min);
-            console.log(xRand, yRand)
-
-            cube.style.transform = 'rotateX('+xRand+'deg) rotateY('+yRand+'deg)';
+            if(parseInt(nb) === rand){
+                resultat = true;
+            }
+            console.log(rand)
+            console.log(nb);
+            console.log(resultat);
         }
+
 
         function getRandom(max, min) {
-            return (Math.floor(Math.random() * (max-min)) + min) * 90;
+            return (Math.floor(Math.random() * (max-min)) + min);
 
         }
 
-
-
-
     </script>
-
 </section>
 
 <footer>

@@ -25,10 +25,8 @@
                     <li class="nav-item"><a href="pages/info_jeux_index.php" class="nav-link ">Info jeux</a></li>
                 </ul>
 
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="admin/pages/auth/login.php" class="nav-link rp-4">Se connecter</a></li>
-                    <li class="nav-item"><a href="admin/pages/auth/create_account.php" class="nav-link rp-4">s'inscrire</a></li>
-                </ul>
+                <?php include("./lib/php/write_log.php")?>
+
             </div>
         </div>
     </nav>
