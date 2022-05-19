@@ -11,7 +11,7 @@ if(isset($_SESSION["log"]) && isset($_SESSION["user"])){
         echo("<li class='nav-item'><img src='./images/img_profil.jpeg'></li>");
         echo("<li class='nav-item'> <ul><li>User :");
         echo($_SESSION["user"]);
-        echo("</li><li> Votre Monnaie :");
+        echo("</li><li class='monnaie'>Votre Monnaie :");
         $info_user=select_class($conn,$_SESSION["user"]);
         echo($info_user["general"]);
         echo("</li><li>");

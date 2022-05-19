@@ -3,7 +3,6 @@
 <head>
     <title>Pages Jeux</title>
     <link href="../css/style_pages_jeux.css" rel="stylesheet">
-    <link href="../css/styles_accueil.css" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
@@ -17,8 +16,7 @@
         <a href="../admin/pages/auth/login.php">Connexion</a>
     </nav>
 </header>
-<div class="main">
-<section id="steezy">
+
 <div class="slide-container">
 
     <div class="custom-slider fade">
@@ -78,44 +76,9 @@
 </section>
 </div>
 
-<footer>
-    <div class="footer">
-        <footer>
-            <div class="social">
-                <a href="#"><i class="icon icon-social-instagram"></i>
-                </a><a href="#"><i class="icon icon-social-snapchat"></i>
-                </a><a href="#"><i class="icon icon-social-twitter"></i></a>
-                <a href="#"><i class="icon icon-social-facebook"></i></a>
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Accueil</a></li>
-                <li class="list-inline-item"><a href="#">Jeux</a></li>
-                <li class="list-inline-item"><a href="#">A propos</a></li>
-                <li class="list-inline-item"><a href="#">Contact</a></li>
-            </ul>
-            <p class="copyright">TeamZboub © 2022</p>
-        </footer>
-    </div>
-</footer>
+
 
 </body>
 <!-- content -->
-<script src="../lib/js/jquery.js"></script>
-<script src="../lib/js/bootstrap.js"></script>
 
 <script src="../lib/js/script_pages_jeux.js"></script>
-
-<script>
-    /* Script Pour scroll header */
-    $(function() {
-        $(window).scroll(function () {
-            var winTop = $(window).scrollTop();
-            if (winTop >= 30) {
-                $("body").addClass("sticky-header");
-            } else {
-                $("body").removeClass("sticky-header");
-            }
-        });
-    });
-</script>
-</html>
