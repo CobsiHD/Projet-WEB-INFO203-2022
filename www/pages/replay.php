@@ -26,7 +26,7 @@ if (isset($_GET)){
             $winner=FALSE;
             echo("<h1>Tu as Perdu !</h1>");
         }
-        echo($_SESSION["mise"]);
+
         win($_SESSION["mise"],$_SESSION["jeux"],$winner,$_SESSION["user"]);
     }
 }
