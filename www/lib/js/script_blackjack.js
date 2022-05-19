@@ -27,6 +27,10 @@ function constrution_deck(){
 }
 function melange_deck() {
     for (let i = 0; i< deck.length ; i++){
-
+        let j =Math.floor(Math.random() * deck.length);
+        let temp = deck[i];
+        deck[i]=deck[j];
+        deck[j]=temp ;
     }
+    console.log(deck);
 }

@@ -1,11 +1,12 @@
 <?php
+/*
 include("../../db/db_connect.php");
 session_start();
 if (!isset($_SESSION["start"]) or $_SESSION["start"]==0.0){
 	header("Location:../../admin/pages/auth/login.php");
 } else if (isset($_SESSION["start"])){
 	header("Location:blackjack.php")
-}
+}*/
 ?>
 
 
@@ -14,6 +15,7 @@ if (!isset($_SESSION["start"]) or $_SESSION["start"]==0.0){
 	<meta charset="UTF-8">
     <title> BlackJack </title>
 	<link rel="stylesheet" href="../../css/styles_blackjack.css">
+	<script src = "../../lib/js/script_blackjack.js"></script>
 </head>
 <body>
 <header>
@@ -21,7 +23,7 @@ if (!isset($_SESSION["start"]) or $_SESSION["start"]==0.0){
 <section>
 	<h2> Dealer : <span id="dealer-sum"></span></h2>
 	<div id="dealer-cards">
-		<img id="hide" src="../../images/cartes/BACK.png">
+		<img id="hide" src="../../images/carte/BACK.png">
 	</div>"
 
 	<h2>Vos Cartes : <span id="player-sum"></span> </h2>
@@ -37,5 +39,7 @@ if (!isset($_SESSION["start"]) or $_SESSION["start"]==0.0){
 </body>
 </html>
 <?php
+/*
 include("../../db/db_disconnect.php");
+*/
 ?>
