@@ -1,5 +1,5 @@
 <?php
-include("../../admin/lib/crud/classements.crud");
+include("./admin/lib/crud/classements.crud.php");
 if(isset($_SESSION["log"]) && isset($_SESSION["user"])){
     if(!$_SESSION["log"]){
         echo("<ul class='navbar-nav ml-auto'>
