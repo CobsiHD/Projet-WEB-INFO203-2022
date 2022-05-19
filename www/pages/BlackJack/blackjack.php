@@ -41,7 +41,6 @@ if (!isset($_SESSION["log"])){
 			echo ("<section class='auth'><div class='box'>
 					<div class='container'>
 						<div class='form'>
-							<h2>Connectez-vous !</h2>
 							<form method='POST' action='blackjack.php'>
 							<div class='inputBox'>
 								<p class='sign'>Mise : </p><input type='number' name='mise'>
@@ -59,7 +58,6 @@ if (!isset($_SESSION["log"])){
 		echo ("<section class='auth'><div class='box'>
 					<div class='container'>
 						<div class='form'>
-							<h2>Connectez-vous !</h2>
 							<form method='POST' action='blackjack.php'>
 							<div class='inputBox'>
 								<p class='sign'>Mise : </p><input type='number' name='mise'>

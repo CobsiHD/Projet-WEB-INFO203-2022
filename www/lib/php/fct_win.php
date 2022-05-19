@@ -1,8 +1,6 @@
 <?php
 
-include ("../../db/db_connect.php");
 
-include("../../admin/lib/crud/classements.crud.php");
 
 
 function win($mise,$jeux,$win,$user){
@@ -34,7 +32,5 @@ update_class($conn, $user,$monnaie_general,$info_joueur['des'],$info_joueur['bon
 };
 };
 
-win(200,"blackjack",TRUE,"Evan");
 
-include("../../db/db_disconnect.php");
 ?>
