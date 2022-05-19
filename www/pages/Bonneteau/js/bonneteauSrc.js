@@ -1,22 +1,16 @@
 
-// recuperer le bouton avec l'id "btn"
-let btn = document.getElementById('btn')
-btn.addEventListener('click', shuffle)
-
 let redcard = 0;
-
-
 
 shuffle()
 
 function shuffle() {
     let allcards = document.getElementsByClassName("card-img");
-    allcards[redcard].setAttribute('src', "images/DPique.png")
+    allcards[redcard].setAttribute('src', "images/A-S.png");
     let random = Math.floor(Math.random() * allcards.length); // un nombre au hasard
     let card = allcards[random];
-    card.setAttribute('src', "images/ACoeur.jpg");
+    card.setAttribute('src', "images/A-H.png");
+    card.id="coeur";
     redcard = random
-    document.getElementById("mise").value = 0;
 }
 
 function flip(event){
@@ -33,22 +27,23 @@ function flip(event){
 
 function win(event){
 
-    var valeurInput =  document.getElementById("mise").value;
-    console.log(valeurInput)
+    var win = false;
 
-}
+    let evenement = event.currentTarget;
 
-function miser(){
+    let idImage = evenement.childNodes[1].childNodes[1];
 
-    if (document.getElementById("mise").value !== 0){
+    if(idImage.id === "coeur"){
 
-        var front = document.getElementsByClassName("front");
-        var i;
-
-        for (i = 0; i < 3; i++) {
-
-            front.className = "back";
-        }
+        win = true;
 
     }
+    else{
+        win = false;
+    }
+
+window.location.replace("http://os-vps418.infomaniak.ch:1180/l1_info_5/www/pages/replay.php?win=" + win)
 }
+
+
+

@@ -43,21 +43,16 @@ div.card {
 }
 
 .front {
-    background: url(../images/ACoeur.jpg) no-repeat;
+    background: url(../images/A-H.png) no-repeat;
     background-size: 200px;
     width: 200px;
     transform: rotateY(180deg);
 }
 
 .back {
-    background: url(../images/Dos.JPEG);
+    background: url(../images/BACK.png);
     background-size: 200px;
     width: 200px;
-}
-
-button#btn {
-    font-size: 50px;
-    width: 100%;
 }
 
 .back:hover {
