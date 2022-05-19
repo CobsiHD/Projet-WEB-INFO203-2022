@@ -21,6 +21,7 @@ if(isset($_POST["login"]) && isset($_POST["passwd"])){
 	}
 }
 ?>
+
 <html>
 <head>
 	<meta charset="UTF-8">
