@@ -15,7 +15,7 @@ if(isset($_SESSION["log"]) && isset($_SESSION["user"])){
         $info_user=select_class($conn,$_SESSION["user"]);
         echo($info_user["general"]);
         echo("</li><li>");
-        echo("<a href='../../pages/info_account.php'>Cliquez-ici pour plus d'info</a></li><li><a href=''>Deconnexion</a></li></ul></li></ul>");
+        echo("<a href='../../pages/info_account.php'>Cliquez-ici pour plus d'info</a></li><li><a href='./admin/pages/disconnect.php'>Deconnexion</a></li></ul></li></ul>");
     }
 } else {
     echo("<ul class='navbar-nav ml-auto'>
