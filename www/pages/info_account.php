@@ -16,7 +16,7 @@ session_start() ;
                 <h2> Information de votre Compte !</h2>
                 <?php 
                 include("../admin/lib/crud/classements.crud.php");
-                $info=select_class($_SESSION["user"]);
+                $info=select_class($conn,$_SESSION["user"]);
                 echo("Votre nom d'utilisateurs est".$info["user"]);
                 echo("<br> Votre argent restant est :".$info["general"]);
                 echo("<br> Argent gagné ou perdu aux jeux :");
