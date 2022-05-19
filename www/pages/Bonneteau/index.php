@@ -61,6 +61,7 @@ $_SESSION["mise"]=$_POST["mise"];
 					<div class='container'>
 						<div class='form'>
 							<form method='POST' action='index.php'>
+                            <p class='sign'><a href='../../index.php'>Retourné à l'accueil</a></p>
 							<div class='inputBox'>
 								<p class='sign'>Mise : </p><input type='number' name='mise'>
 							</div>
@@ -78,6 +79,7 @@ $_SESSION["mise"]=$_POST["mise"];
 					<div class='container'>
 						<div class='form'>
 							<form method='POST' action='index.php'>
+                            <p class='sign'><a href='../../index.php'>Retourné à l'accueil</a></p>
 							<div class='inputBox'>
 								<p class='sign'>Mise : </p><input type='number' name='mise'>
 							</div>
