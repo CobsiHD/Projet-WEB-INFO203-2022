@@ -26,31 +26,31 @@ if (!isset($_SESSION["log"])){
 <?php
 if (isset($_POST["mise"])){
     if ($_POST["mise"]!=""){
-        echo("<div class="container">
-    <h1 class="titre">Bonneteau</h1>
-    <h3 class="slogan">La carte rouge gagne et les cartes noires perdent</h3>
+        echo("<div class='container'>
+    <h1 class='titre'>Bonneteau</h1>
+    <h3 class='slogan'>La carte rouge gagne et les cartes noires perdent</h3>
 
-    <div class="cards">
-        <div class="card" onclick="flip(event); gagner(event);" >
+    <div class='cards'>
+        <div class='card' onclick='flip(event); gagner(event);' >
 
-            <div class="front">
-                <img class="card-img coeur" src="images/A-H.png" width="200" alt="As de Coeur">
+            <div class='front'>
+                <img class='card-img coeur' src='images/A-H.png' width='200' alt='As de Coeur'>
             </div>
-            <div class="back"></div>
+            <div class='back'></div>
         </div>
-        <div class="card" onclick="flip(event); gagner(event);">
+        <div class='card' onclick='flip(event); gagner(event);'>
 
-            <div class="front">
-                <img class="card-img pique" src="images/A-S.png" width="200" alt="As de Pique">
+            <div class='front'>
+                <img class='card-img pique' src='images/A-S.png' width='200' alt='As de Pique'>
             </div>
-            <div class="back"></div>
+            <div class='back'></div>
         </div>
-        <div class="card" onclick="flip(event); gagner(event);">
+        <div class='card' onclick='flip(event); gagner(event);'>
 
-            <div class="front">
-                <img class="card-img pique" src="images/A-S.png" width="200" alt="As de Pique">
+            <div class='front'>
+                <img class='card-img pique' src='images/A-S.png' width='200' alt='As de Pique'>
             </div>
-            <div class="back"></div>
+            <div class='back'></div>
         </div>
     </div>
 
