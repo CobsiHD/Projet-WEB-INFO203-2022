@@ -1,10 +1,10 @@
 <?php
-include("../../admin/lib/crud/classements.crud");
+include("./admin/lib/crud/classements.crud.php");
 if(isset($_SESSION["log"]) && isset($_SESSION["user"])){
     if(!$_SESSION["log"]){
         echo("<ul class='navbar-nav ml-auto'>
-        <li class='nav-item'><a href='../../admin/pages/auth/login.php' class='nav-link rp-4'>Se connecter</a></li>
-                    <li class='nav-item'><a href='../../admin/pages/auth/create_account.php' class='nav-link rp-4'>s'inscrire</a></li>
+        <li class='nav-item'><a href='./admin/pages/auth/login.php' class='nav-link rp-4'>Se connecter</a></li>
+                    <li class='nav-item'><a href='./admin/pages/auth/create_account.php' class='nav-link rp-4'>s'inscrire</a></li>
     </ul>");
     } else {
         echo("<ul> class='navbar-nav ml-auto'>");
