@@ -40,6 +40,13 @@ body {
 
 .navbar .nav-link {
     color: #fff;
+
+}
+
+.navbar img{
+    height: 20px;
+    width: auto;
+
 }
 
 .navbar .nav-link:hover,
