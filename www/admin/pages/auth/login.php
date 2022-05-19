@@ -14,7 +14,7 @@ if(isset($_POST["login"]) && isset($_POST["passwd"])){
 		$_SESSION["log"]=TRUE ; 
         $_SESSION["user"]=$log;
 		/* redirection */
-		header("Location:../../../index.php") ;
+		header("Location:../../../index.html") ;
     }
 	else {
 		header("Location:login.php") ; 

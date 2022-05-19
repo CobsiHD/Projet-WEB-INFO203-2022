@@ -25,7 +25,7 @@
                     <li class="nav-item"><a href="pages/info_jeux_index.php" class="nav-link ">Info jeux</a></li>
                 </ul>
 
-                <?php include("lib/php/write_log.php")?>
+                <?php include("./lib/php/write_log.php")?>
 
             </div>
         </div>
