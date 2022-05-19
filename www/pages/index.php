@@ -36,7 +36,7 @@
     </div>
     <div class="custom-slider fade">
         <div class="slide-index">3 / 6</div>
-            <a href="Dice/index.html">
+            <a href="Dice/index.php">
                 <img class="slide-img" src="../images/imgdes.png" alt="Le jeu du dé">
             </a>
         <div class="slide-text">Le jeu du dé</div>
