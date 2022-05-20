@@ -1,0 +1,18 @@
+.soon {
+    top: 50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+.title {
+    font-size: 1.25em;
+    letter-spacing: 15px;
+}
+hr {
+    width: 70%;
+    margin : 30px auto;
+    border : 1.5px solid #fff;
+    background-color: #fff;
+}

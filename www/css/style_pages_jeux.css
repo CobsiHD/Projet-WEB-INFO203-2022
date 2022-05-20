@@ -1,3 +1,12 @@
+
+
+body {
+    min-height: 110vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(36,0,31,1) 23%, rgba(70,7,73,1) 56%, rgba(247,73,255,1) 100%);
+
+}
+
 .custom-slider {
     display: none;
 }
@@ -101,4 +110,15 @@
 #prev {
     display: block;
     transform: scale(0.5);
+}
+
+header h1 {
+    display: flex;
+    color: #aaaaaa;
+    justify-content: space-around;
+}
+
+header a {
+    display: flex;
+    justify-content: space-around;
 }

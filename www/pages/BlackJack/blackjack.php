@@ -17,6 +17,7 @@ if (!isset($_SESSION["log"])){
     <title> BlackJack </title>
 	<link rel="stylesheet" href="../../css/styles_blackjack.css">
 	<link rel="stylesheet" href="../../css/styles_auth.css">
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
 	<script src = "../../lib/js/script_blackjack.js"></script>
 </head>
 <body>
@@ -26,7 +27,7 @@ if (!isset($_SESSION["log"])){
 	<?php 
 	if (isset($_POST["mise"])){
 		if ($_POST["mise"]!=""){
-			echo( "<section><h2> Dealer : <span id='dealer-score'></span></h2>
+			echo( "<div id='jeux'><h2> Dealer : <span id='dealer-score'></span></h2>
 			<div id='dealer-cards'>
 				<img id='hide' src='../../images/carte/BACK.png'>
 			</div>
@@ -36,13 +37,14 @@ if (!isset($_SESSION["log"])){
 			<br>
 			<button id='hit'>Prendre une Carte </button>
 			<button id='stay'>Garder votre Main </button>
-			<p id='result'></p></section>");
+			<p id='result'></p></div<");
 			$_SESSION["mise"]=$_POST["mise"];
 		}else {
 			echo ("<section class='auth'><div class='box'>
 					<div class='container'>
 						<div class='form'>
 							<form method='POST' action='blackjack.php'>
+								<p class='sign'><a href='../../index.php'>Retourné à l'accueil</a></p>
 							<div class='inputBox'>
 								<p class='sign'>Mise : </p><input type='number' name='mise'>
 							</div>
@@ -60,6 +62,7 @@ if (!isset($_SESSION["log"])){
 					<div class='container'>
 						<div class='form'>
 							<form method='POST' action='blackjack.php'>
+							<p class='sign'><a href='../../index.php'>Retourné à l'accueil</a></p>
 							<div class='inputBox'>
 								<p class='sign'>Mise : </p><input type='number' name='mise'>
 							</div>
@@ -73,8 +76,5 @@ if (!isset($_SESSION["log"])){
         		</div></section>");
 	};
 	?>
-<footer>
-</footer>
-
 </body>
 </html>

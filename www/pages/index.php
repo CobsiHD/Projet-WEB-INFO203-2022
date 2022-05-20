@@ -11,7 +11,7 @@
     <h1>Bienvenue au CASINO !</h1>
     <nav>
         <a href="../index.php">Accueil</a>
-        <a href="">Info Jeux</a>
+        <a href="info_jeux_index.php">Info Jeux</a>
         <a href="classements/classement.php">Classement</a>
         <a href="../admin/pages/auth/login.php">Connexion</a>
     </nav>

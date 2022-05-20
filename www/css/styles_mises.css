@@ -1,3 +1,6 @@
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -15,10 +18,7 @@ body {
     background: rgb(0,0,0);
     background: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(36,0,31,1) 23%, rgba(70,7,73,1) 56%, rgba(247,73,255,1) 100%);
 }
-.box{
-    position: relative; 
-}
-.container {
+.container1 {
     position: relative;
     width: 150%;
     min-height: 150%;
@@ -32,6 +32,9 @@ body {
     border : 1px solid rgba(255,255,255,0.5);
     border-right:1px solid rgba(255,255,255,0.2);
     border-bottom:1px solid rgba(255,255,255,0.2);
+}
+.box{
+    position: relative; 
 }
 
 .form {

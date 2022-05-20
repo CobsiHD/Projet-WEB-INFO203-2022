@@ -168,6 +168,7 @@ if (isset($_POST["loginSuppr"]))
     $log=$_POST["loginSuppr"];
 
     delete_auth($conn, $log);
+    delete_class($conn, $log);
 }
 
 
