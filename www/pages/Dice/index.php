@@ -18,6 +18,7 @@ if (!isset($_SESSION["log"])) {
     <meta charset="utf-8">
     <title>Accueil</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../../css/styles_mises.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -71,9 +72,10 @@ if (isset($_POST["mise"])){
         $_SESSION["mise"]=$_POST["mise"];
     }else {
         echo ("<section class='auth'><div class='box'>
-					<div class='container'>
+					<div class='container1'>
 						<div class='form'>
 							<form method='POST' action='index.php'>
+                            <p class='sign'><a href='../../index.php'>Retourné à l'accueil</a></p>
 							<div class='inputBox'>
 								<p class='sign'>Mise : </p><input type='number' name='mise'>
 							</div>
@@ -88,9 +90,10 @@ if (isset($_POST["mise"])){
     }
 }else {
     echo ("<section class='auth'><div class='box'>
-					<div class='container'>
+					<div class='container1'>
 						<div class='form'>
 							<form method='POST' action='index.php'>
+                            <p class='sign'><a href='../../index.php'>Retourné à l'accueil</a></p>
 							<div class='inputBox'>
 								<p class='sign'>Mise : </p><input type='number' name='mise'>
 							</div>
