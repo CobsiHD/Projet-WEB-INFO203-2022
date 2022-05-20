@@ -62,11 +62,11 @@ include("./db/db_connect.php");
                 <h2>Jouer aux jeux</h2>
                     <p>Sur ce casino en ligne vous avez accès à 6 jeux, à retrouver sur <a href="pages/index.php">cette page</a>. Pour comprendre les règles et savoir comment jouer, je vous invite à consulter la <a href="pages/info_jeux_index.php">page dédier aux règles.</a> Pour jouer à un jeu, rien de plus simple, vous vous rendez sur la page de votre jeu après avoir lu les règles, et vous pouvez y jouer sur votre navigateur internet.</p>
                 <h2>Classement</h2>
-                    <p>Nous avons mis en place un système de classement, que vous pouvez consulter sur <a href="">cette page</a>. Pour monter dans le classement, il suffi de gagner des coins en jouant aux jeux. Plus vous jouez; plus vous avez de chance de gagner, mais plus vous avez de chance de perdre, Bonne chance à tous !</p>
+                    <p>Nous avons mis en place un système de classement, que vous pouvez consulter sur <a href="">cette page</a>. Pour monter dans le classement, il suffit de gagner des coins en jouant aux jeux. Plus vous jouez, plus vous avez de chance de gagner, mais plus vous avez de chance de perdre, Bonne chance à tous !</p>
             <h1>Nouveauté</h1>
                 <h2>Jeux</h2>
                     <h3>17/05/22</h3>
-            <p> A ce jour nous avons mis a disposition 6 jeux parmis lesquel on retrouve : <ul><li>Bonneteau</li><li>Lancer de Dés</li><li>Blacjack</li><li>Roulette</li><li>PMU</li><li>Machine à sous</li></ul> En espérant que ces jeux vous plaisent.</p>
+            <p> A ce jour nous avons mis à disposition 6 jeux parmis lesquels on retrouve : <ul><li>Bonneteau</li><li>Lancer de Dés</li><li>Blacjack</li><li>Roulette</li><li>PMU</li><li>Machine à sous</li></ul> En espérant que ces jeux vous plaisent.</p>
         </div>
     </div>
 </main>
