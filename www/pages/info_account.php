@@ -27,7 +27,6 @@ session_start() ;
                     $info=select_class($conn,$_SESSION["user"]);
                     echo("<p class = 'sign'>Votre nom d'utilisateurs est <strong>".$info["user"]);
                     echo("</strong><br> Votre argent restant est : <strong>".$info["general"]);
-                    echo("</strong><br> Argent gagné ou perdu aux jeux :");
                     echo("<br> BlackJack : <strong>".$info["blackjack"]);
                     echo("</strong><br> Bonnetaeau : <strong>".$info["bonneteau"]);
                     echo("</strong><br> Courses à Cheval : <strong>".$info["chevaux"]);

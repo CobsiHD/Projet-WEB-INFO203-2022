@@ -42,19 +42,23 @@
     </div>
     <div class="custom-slider fade">
         <div class="slide-index">4 / 6</div>
-            <a href="Horse/index.php">
+            <a href="coming_soon.php">
                 <img class="slide-img" src="../images/PMU.png" alt="Le PMU">
             </a>
         <div class="slide-text">La Course Hippique</div>
     </div>
     <div class="custom-slider fade">
         <div class="slide-index">5 / 6</div>
-        <img class="slide-img" src="../images/roulette.png" alt="La roulette">
+            <a href="coming_soon.php">
+                <img class="slide-img" src="../images/roulette.png" alt="La roulette">
+            </a>
         <div class="slide-text">La Roulette</div>
     </div>
     <div class="custom-slider fade">
         <div class="slide-index">6 / 6</div>
-        <img class="slide-img" src="../images/jackpot.png" alt="Machine à sous">
+            <a href="coming_soon.php">
+                <img class="slide-img" src="../images/jackpot.png" alt="Machine à sous">
+            </a>
         <div class="slide-text">La Machine Sous</div>
     </div>
 
