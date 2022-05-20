@@ -22,7 +22,7 @@ if(isset($_SESSION["log"]) && isset($_SESSION["user"])){
         echo("</a></li>");
 
 
-        
+
         echo("<li class='nav-item' ><a class='nav-link' href='./pages/info_account.php'>Info Compte</a></li>
               <li class='nav-item'><a class='nav-link' href='./admin/pages/disconnect.php'>Deconnexion</a></li></ul></div>");
     }
