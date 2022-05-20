@@ -320,6 +320,30 @@ body {
     .navbar .navbar-brand, .navbar .nav-link {
         color: #555;
     }
+
+    body {
+        height: 50vh;
+    }
+    .container_main{
+        background: #111111 url("../images/background_casino.png") no-repeat center;
+        height: 100%;
+        width: auto;
+    }
+
+    .content_main{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1vh;
+        grid-auto-rows: minmax(5vh, auto);
+    }
+
+    .titre{
+        grid-column: 4;
+        grid-row: 3;
+        font-family: Cambria;
+    }
+
+
 }
 
 
