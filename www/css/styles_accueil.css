@@ -43,10 +43,16 @@ body {
 
 }
 
-.navbar img{
-    height: 20px;
+.piece, .profil {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
     width: auto;
 
+}
+
+.nav-item{
+    vertical-align: center;
 }
 
 .navbar .nav-link:hover,

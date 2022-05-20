@@ -7,15 +7,24 @@ if(isset($_SESSION["log"]) && isset($_SESSION["user"])){
                     <li class='nav-item'><a href='./admin/pages/auth/create_account.php' class='nav-link rp-4'>s'inscrire</a></li>
     </ul>");
     } else {
-        echo("<ul class='navbar-nav ml-auto'>");
-        echo("<li class='nav-item'><img src='./images/img_profil.jpeg'></li>");
-        echo("<li class='nav-item'> <ul><li>User :");
-        echo($_SESSION["user"]);
-        echo("</li><li class='monnaie'>Votre Monnaie :");
+        echo('<div id="navbarSupportedContent" class="collapse navbar-collapse">');
+        echo("<ul class='navbar-nav  ml-auto'>");
         $info_user=select_class($conn,$_SESSION["user"]);
+
+        echo("<li class='nav-item'><a class='nav-link'>");
         echo($info_user["general"]);
-        echo("</li><li>");
-        echo("<a href='./pages/info_account.php'>Cliquez-ici pour plus d'info</a></li><li><a href='./admin/pages/disconnect.php'>Deconnexion</a></li></ul></li></ul>");
+        echo("<img class='piece' src='./images/piece.png' alt='piece'>");
+        echo("</a></li>");
+
+        echo("<li class='nav-item'><a class='nav-link'>");
+        print($_SESSION["user"]);
+        echo("<img class='profil' src='./images/profil.png' alt='piece'>");
+        echo("</a></li>");
+
+
+        
+        echo("<li class='nav-item' ><a class='nav-link' href='./pages/info_account.php'>Info Compte</a></li>
+              <li class='nav-item'><a class='nav-link' href='./admin/pages/disconnect.php'>Deconnexion</a></li></ul></div>");
     }
 } else {
     echo("<ul class='navbar-nav ml-auto'>
