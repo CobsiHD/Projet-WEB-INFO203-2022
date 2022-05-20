@@ -3,28 +3,29 @@
     margin: 0;
     padding: 0;
 }
-section {
+#jeux {
     text-align: center;
-    background-color: #0e5442;
+    background: rgb(0,0,0);
+    background: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(36,0,31,1) 23%, rgba(70,7,73,1) 56%, rgba(247,73,255,1) 100%);
     color : white ;
+    min-height: 110vh;
 }
 
 button {
-    width : 300px ;
-    height : 100px ;
+    width : 90% ;
+    height : 60% ;
     border : none ;
     border-radius: 4px;
     transition: ease-out 0.3s;
     font-size: 2rem;
     outline: none;
-    border: 5px solid rgb(17, 243, 224);
     position: relative;
-    background-color: #0e5442;
+    background-color: rgb(70,7,73);
     z-index: 1;
     color : white ;
 }
 button:hover {
-    color :rgb(72, 70, 72);
+    color :#fff;
     cursor: pointer;
 }
 button:before {
@@ -36,7 +37,8 @@ button:before {
     bottom : 0;
     opacity: 0 ;
     content:"";
-    background-color:rgb(17, 243, 224) ;
+    background-color:rgb(83, 10, 177) ;
+
 }
 button:hover:before{
     transition: 0.5s all ease;

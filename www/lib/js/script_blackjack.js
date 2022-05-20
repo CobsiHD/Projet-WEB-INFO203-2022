@@ -85,14 +85,17 @@ function checkAce(card){
     return res 
 }
 function hit(){
-    if (pioche){
-        let cardImg = document.createElement("img");
-        let card = deck.pop();
-        cardImg.src = "../../images/carte/" + card + ".png";
-        playerscore += getValue(card);
-        playeracecount += checkAce(card);
-        document.getElementById("player-cards").append(cardImg);
+    if (!pioche){
+        return;
     }
+    
+    let cardImg = document.createElement("img");
+    let card = deck.pop();
+    cardImg.src = "../../images/carte/" + card + ".png";
+    playerscore += getValue(card);
+    playeracecount += checkAce(card);
+    document.getElementById("player-cards").append(cardImg);
+
     if (reduceAce(playerscore,playeracecount)){
         pioche =false;
     }
@@ -107,7 +110,7 @@ function reduceAce(playerscore,playeracecount){
 function stay(){
     dealerscore = reduceAce(dealerscore,dealeracecount);
     playerscore = reduceAce(playerscore,playeracecount);
-    canHit=false ;
+    pioche=false ;
     document.getElementById("hide").src ="../../images/carte/" + hide + ".png" ;
     let message=""
     if (playerscore > 21){
