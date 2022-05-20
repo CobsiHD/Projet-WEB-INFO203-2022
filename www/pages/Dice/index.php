@@ -120,7 +120,6 @@ if (isset($_POST["mise"])){
                 cube.onclick = function() {
                     var nb = document.getElementById("nb").value;
                     var rand = getRandom(max, min);
-                    var win = false;
 
                     if(rand === 6){
                         var yrand = 0;
